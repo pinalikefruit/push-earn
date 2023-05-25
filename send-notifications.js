@@ -13,17 +13,17 @@ const sendNotification = async() => {
       type: 1, // broadcast
       identityType: 2, // direct payload
       notification: {
-        title: `Welcome`,
-        body: `This is my first notification`
+        title: `Win with Push Missions`,
+        body: `See the #1 mission`
       },
       payload: {
-        title: `first notification`,
-        body: `This working`,
-        cta: 'https://staging.push.org/send',
+        title: `🇮🇳 Win with Push Missions`,
+        body: `Integration of translation framework in Push website and dApp in Spanish language`,
+        cta: 'https://pushprotocol.notion.site/Push-Missions-693291d804cf4b2180a992dd40fc5a0e?p=3d5c3e7f9cb24108ac9d235fb0a6070f&pm=s',
         img: ''
       },
-      channel: 'eip155:5:0x55BD7E92250903186CEb3938c70F103654a38De1', // your channel address
-      env: 'staging'
+      channel: 'eip155:5:0x55BD7E92250903186CEb3938c70F103654a38De1', // Push Earn Channel
+      env: 'prod'
     });
   } catch (err) {
     console.error('Error: ', err);
